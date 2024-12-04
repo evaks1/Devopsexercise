@@ -22,7 +22,7 @@ jobs:
       run: |
         az deployment group create \
           --resource-group BCSAI2024-DEVOPS-STUDENTS-A-DEV1 \
-          --template-file keyVault.bicep \
+          --template-file ./modules/keyVault.bicep 
         && az deployment group create \
           --resource-group aBCSAI2024-DEVOPS-STUDENTS-A-DEV \
           --template-file main.bicep
